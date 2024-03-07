@@ -13,6 +13,6 @@ spring:
           predicates:
             - Path=/records/**
         - id: Microservice2
-          uri: http://localhost:8081/
+          uri: http://localhost:8800/
           predicates:
             - Path=/users/**

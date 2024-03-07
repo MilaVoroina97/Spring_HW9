@@ -19,6 +19,6 @@ public class RecordGateway {
                 .route("Microservice1",r->r.path("/records/**")
                         .uri("http://localhost:8080/"))
                 .route("Microservice2",r->r.path("/users/**")
-                        .uri("http://localhost:8081/")).build();
+                        .uri("http://localhost:8800/")).build();
     }
 }
