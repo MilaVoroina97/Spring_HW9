@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: RecordsService
+
+db:
+  deleteById: DELETE FROM records
+    WHERE id=?
+  gelAll: SELECT * FROM records
+  getOneRecord: SELECT * FROM records
+    WHERE id=?
+  save: INSERT INTO records (title,content, createdDate)
+    VALUES (?, ?, ?, ?)
+  updateRecord: UPDATE records
+    SET title=?, content=?, createdDate=?
+    WHERE id=?
