@@ -8,7 +8,7 @@ spring:
 db:
   deleteById: DELETE FROM records
     WHERE id=?
-  gelAll: SELECT * FROM records
+  getAll: SELECT * FROM records
   getOneRecord: SELECT * FROM records
     WHERE id=?
   save: INSERT INTO records (title,content, createdDate)
